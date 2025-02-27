@@ -15,7 +15,7 @@ import seaborn as sns
 
 # Load the dataset
 try:
-    df = pd.read_csv('titanic.csv')  # Adjust path as needed
+    df = pd.read_csv('/Titanic-survival/titanic_survival-master/titanic.csv')  # Adjust path as needed
 except FileNotFoundError:
     st.error("The dataset could not be found. Please check the file path or upload the dataset.")
     st.stop()
