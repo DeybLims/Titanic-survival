@@ -14,7 +14,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv('/Titanic-survival/titanic_survival-master/titanic.csv')
+try:
+    df = pd.read_csv('titanic.csv')  # Adjust path as needed
+except FileNotFoundError:
+    st.error("The dataset could not be found. Please check the file path or upload the dataset.")
+    st.stop()
 
 # Title of the app
 st.title("Titanic Survival Prediction App")
