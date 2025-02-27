@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-df = pd.read_csv('/titanic_survival-master/titanic.csv')
+df = pd.read_csv('/Titanic-survival/titanic_survival-master/titanic.csv')
 
 # Title of the app
 st.title("Titanic Survival Prediction App")
